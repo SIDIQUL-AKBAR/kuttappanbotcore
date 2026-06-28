@@ -1,86 +1,16 @@
-# 🤖 Discord Bot Website Template
+# 🌐 Kuttappan Bot - Web Dashboard & Landing Page
 
-> A sleek, modern landing page template for Discord bots powered by HTML, TailwindCSS, and GSAP animations.
+Welcome to the official web dashboard and landing page repository for **Kuttappan Bot**! This project is a customized frontend fork of the [discord-bot-website-template](https://github.com/RedolentHalo/discord-bot-website-template), modified to showcase the stats, features, and commands of Kuttappan Bot in a clean, modern interface.
 
-![License](https://img.shields.io/badge/license-MIT-red.svg)
-![HTML](https://img.shields.io/badge/HTML-5-red.svg)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-red.svg)
-![GSAP](https://img.shields.io/badge/GSAP-3-red.svg)
+Because this is a completely frontend-based dashboard, it requires no complex backend server or login authentication—making it incredibly fast, secure, and easy to host.
 
-![image](https://github.com/user-attachments/assets/30a3d0c9-df7a-4a16-b3f7-198962dce80b)
+## ✨ Features (Customized for Kuttappan Bot)
+* **Modern & Responsive UI:** A dark-themed, sleek user interface built with HTML and CSS that looks great on both desktop and mobile screens.
+* **Live Bot Stats Display:** Highlighting active server counts, total users, and bot uptime metrics.
+* **Command Showcase:** An organized, easy-to-read section displaying all available Kuttappan Bot commands and usage details.
+* **Invite & Support Links:** Direct call-to-action buttons allowing users to easily invite the bot or join the support server.
+* **Lightweight & Fast:** Pure frontend design means instant load times and hassle-free deployment.
 
-
-## ✨ Features
-
-- 🎨 &nbsp;Modern gradient design
-- 📱 &nbsp;Responsive layout
-- ⚡ &nbsp;GSAP animations
-- 🎯 &nbsp;Expandable command categories
-- 🌙 &nbsp;Dark theme + blur effects
-- 🔄 &nbsp;Loading animations
-- 📊 &nbsp;Live GitHub stats
-- 💫 &nbsp;Interactive UI elements
-
-## 🚀 Quick Start
-
-```bash
-# Clone repository
-git clone github.com/redolenthalo/discord-bot-website-template
-
-# Navigate to directory
-cd discord-bot-website-template
-
-# Open in browser
-open index.html
-```
-
-## ⚙️ Customization
-
-### Basic Setup
-
-1. **Bot Info**
-   ```html
-   <!-- Update in index.html -->
-   <title>Your Bot Name</title>
-   <meta name="description" content="Your bot description">
-   ```
-
-2. **Assets**
-   ```bash
-   # Replace with your images
-   /images/
-   ├── logo.png     # Bot logo
-   └── user.png     # Testimonial avatars
-   ```
-
-3. **Colors**
-   ```css
-   /* Modify in styles.css */
-   .gradient-bg {
-     background: linear-gradient(-45deg, #dc2626, #991b1b);
-   }
-   ```
-
-### 📝 Command Structure
-
-```javascript
-// Configure in script.js
-const commandsData = {
-  moderation: {
-    icon: "🛡️",
-    title: "Moderation",
-    commands: [
-      {
-        name: "/ban",
-        description: "Ban a user",
-        permission: "ADMINISTRATOR"
-      }
-    ]
-  }
-};
-```
-
----
-[![Star Repo](https://img.shields.io/github/stars/redolenthalo/discord-bot-website-template?style=social)](https://github.com/redolenthalo/discord-bot-website-template)
-
-> 💝 A star would be greatly appreciated!
+## 🛠️ Built With
+* **HTML5** & **CSS3** (Custom layouts, animations, and responsive design)
+* **JavaScript** (For interactive elements and smooth UI transitions)
