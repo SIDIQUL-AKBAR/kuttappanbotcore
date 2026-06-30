@@ -1,64 +1,389 @@
 const commandsData = {
   category1: {
-    icon: "📜",
-    title: "Category 1",
+    icon: "🛡️",
+    title: "Moderation",
     commands: [
       {
-        name: "/command1",
-        description: "Description of command1",
+        name: "/ban ",
+        description: "Permanently bans a user from the server.",
         permission: "All",
       },
       {
-        name: "/command2",
-        description: "Description of command2",
+        name: "/kick",
+        description: "Removes a user from the server (they can still rejoin).",
+        permission: "All",
+      },
+      {
+        name: "/mute",
+        description: "Restricts a user from typing or speaking.",
+        permission: "All",
+      },
+      {
+        name: "/unmute",
+        description: "Removes a mute from a user.",
+        permission: "All",
+      },
+      {
+        name: "/warn",
+        description: "Issues an official warning to a user.",
+        permission: "All",
+      },
+      {
+        name: "/unban",
+        description: "Revokes a user's ban using their User ID.",
+        permission: "All",
+      },
+      {
+        name: "/purge",
+        description: "Bulk deletes a specified number of messages.",
+        permission: "All",
+      },
+      {
+        name: "/slowmode",
+        description: "Sets a cooldown timer between messages in a channel.",
+        permission: "All",
+      },
+      {
+        name: "/lock",
+        description: "Prevents members from sending messages in the current channel.",
+        permission: "All",
+      },
+      {
+        name: "/unlock",
+        description: "Re-opens a locked channel for messages.",
+        permission: "All",
+      },
+      {
+        name: "/nickname",
+        description: "Changes a specific user's nickname.",
+        permission: "All",
+      },
+      {
+        name: "/role",
+        description: "Adds or removes a role from a user.",
+        permission: "All",
+      },
+      {
+        name: "/modlogs",
+        description: "Views the moderation history/logs for a user.",
+        permission: "All",
+      },
+      {
+        name: "/timeout",
+        description: "Temporarily timeouts a user, preventing interaction.",
+        permission: "All",
+      },
+      {
+        name: "/announce",
+        description: "Sends a formatted announcement to a specific channel.",
         permission: "All",
       },
     ],
   },
   category2: {
-    icon: "⚙️",
-    title: "Category 2",
+    icon: "⭐",
+    title: "Leveling",
     commands: [
       {
-        name: "/command3",
-        description: "Description of command3",
+        name: "/rank",
+        description: "Displays your or another user's current level and XP.",
         permission: "Admin",
       },
       {
-        name: "/command4",
-        description: "Description of command4",
+        name: "/leaderboard",
+        description: "Shows the server’s top XP earners.",
+        permission: "Admin",
+      },
+      {
+        name: "/addxp",
+        description: "Grants a specific amount of XP to a user.",
+        permission: "Admin",
+      },
+      {
+        name: "/removexp",
+        description: "Deducts a specific amount of XP from a user.",
+        permission: "Admin",
+      },
+      {
+        name: "/setlevel",
+        description: "Manually sets a user's level to a specific number.",
+        permission: "Admin",
+      },
+      {
+        name: "/resetxp",
+        description: "Resets all leveling data or a specific user's XP.",
         permission: "Admin",
       },
     ],
   },
   category3: {
-    icon: "🎮",
-    title: "Category 3",
+    icon: "🎵",
+    title: "Music",
     commands: [
       {
-        name: "/command5",
-        description: "Description of command5",
+        name: "/play",
+        description: "Plays a song or playlist from a link or search query.",
         permission: "All",
       },
       {
-        name: "/command6",
-        description: "Description of command6",
+        name: "/skip",
+        description: "Skips the song currently playing.",
+        permission: "All",
+      },
+      {
+        name: "/stop",
+        description: "Stops the music completely and clears the queue.",
+        permission: "All",
+      },
+      {
+        name: "/queue",
+        description: "Displays the list of upcoming songs.",
+        permission: "All",
+      },
+      {
+        name: "/nowplaying",
+        description: "Shows details about the song currently playing.",
+        permission: "All",
+      },
+      {
+        name: "/history",
+        description: "Views a list of recently played tracks.",
+        permission: "All",
+      },
+      {
+        name: "/volume",
+        description: "Adjusts the bot’s audio volume level.",
+        permission: "All",
+      },
+      {
+        name: "/pause",
+        description: "Pauses the current music playback.",
+        permission: "All",
+      },
+      {
+        name: "/resume",
+        description: "Resumes playing paused music.",
+        permission: "All",
+      },
+      {
+        name: "/shuffle",
+        description: "Randomizes the order of tracks in the queue.",
         permission: "All",
       },
     ],
   },
   category4: {
-    icon: "🛠️",
-    title: "Category 4",
+    icon: "💰",
+    title: "Economy",
     commands: [
       {
-        name: "/command7",
-        description: "Description of command7",
+        name: "/balance",
+        description: "Checks your or another user's current wallet/bank balance.",
+        permission: "All",
+      },
+      {
+        name: "/daily",
+        description: "Claims your free daily bonus currency.",
+        permission: "All",
+      },
+       {
+        name: "/work",
+        description: "Shifts for a job to earn a random amount of currency.",
+        permission: "All",
+      },
+      {
+        name: "/pay",
+        description: "Transfers a specific amount of your currency to another user.",
         permission: "Mod",
       },
       {
-        name: "/command8",
-        description: "Description of command8",
+        name: "/richlist",
+        description: "Displays the wealthiest users in the server.",
+        permission: "All",
+      },
+    ],
+  },
+   category5: {
+    icon: "🎮",
+    title: "Games",
+    commands: [
+      {
+        name: "/rps",
+        description: "Play a game of Rock, Paper, Scissors against the bot.",
+        permission: "Mod",
+      },
+      {
+        name: "/trivia",
+        description: "Answers a multiple-choice trivia question for fun.",
+        permission: "Mod",
+      },
+      {
+        name: "/coinflip",
+        description: "Flips a coin for a random Heads or Tails result.",
+        permission: "Mod",
+      },
+    ],
+  },
+   category6: {
+    icon: "🎉",
+    title: "Giveaways",
+    commands: [
+      {
+        name: "/gstart",
+        description: "Starts a new giveaway with a set duration and prize.",
+        permission: "Mod",
+      },
+      {
+        name: "/gend",
+        description: "Ends an ongoing giveaway early and picks a winner.",
+        permission: "Mod",
+      },
+      {
+        name: "/greroll",
+        description: "Rolls a new winner for a completed giveaway.",
+        permission: "Mod",
+      },
+      {
+        name: "/glist",
+        description: "Displays all active giveaways running on the server.",
+        permission: "Mod",
+      },
+    ],
+  },
+   category7: {
+    icon: "🎭",
+    title: "Reaction Roles",
+    commands: [
+      {
+        name: "/reactionrole add",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/reactionrole remove",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/reactionrole list",
+        description: " ",
+        permission: "Mod",
+      },
+    ],
+  },
+   category8: {
+    icon: "⚙️",
+    title: "Setup",
+    commands: [
+      {
+        name: "/setup welcome",
+        description: "Configures the custom welcome/leave message channel.",
+        permission: "Mod",
+      },
+      {
+        name: "/setup logs",
+        description: "Sets up a dedicated channel for moderation and system logs.",
+        permission: "Mod",
+      },
+      {
+        name: "/setup automod",
+        description: "Configures automated moderation filters (e.g., banned words).",
+        permission: "Mod",
+      },
+      {
+        name: "/setup antispam",
+        description: "Toggles and configures protection against fast spammers.8",
+        permission: "Mod",
+      },
+      {
+        name: "/setup autorole",
+        description: "Sets roles to be automatically given to users upon joining.",
+        permission: "Mod",
+      },
+      {
+        name: "/setup status",
+        description: "Displays the current configuration status of all bot systems.",
+        permission: "Mod",
+      },
+    ],
+  },
+   category9: {
+    icon: "🔧",
+    title: "Utility",
+    commands: [
+      {
+        name: "/ping",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/botinfo",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/serverinfo",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/userinfo",
+        description: " ",
+        permission: "Mod",
+      },
+       {
+        name: "/avatar",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/poll",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/say",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/embed",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/remind",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/dice",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/choose",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/calc",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/cmd",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/activity",
+        description: " ",
+        permission: "Mod",
+      },
+      {
+        name: "/help",
+        description: " ",
         permission: "Mod",
       },
     ],
