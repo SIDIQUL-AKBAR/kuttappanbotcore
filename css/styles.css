@@ -11,7 +11,7 @@
 }
 
 .gradient-bg {
-  background: linear-gradient(-45deg, #dc2626, #ef4444, #b91c1c, #991b1b);
+  background: linear-gradient(-45deg, #6038cc, #9457EB, #A061FF, #8647E6);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -49,7 +49,7 @@
 }
 
 .glow {
-  box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 0 20px rgba(150, 123, 182, 0.3);
 }
 
 .floating {
@@ -74,7 +74,7 @@
 
 .command-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.2);
+  box-shadow: 0 10px 30px rgba(150, 123, 182, 0.2);
 }
 
 .arrow-icon {
@@ -91,17 +91,17 @@
 }
 
 .feature-card {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(150, 123, 182, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(150, 123, 182, 0.1);
   transition: all 0.3s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(220, 38, 38, 0.15);
-  border-color: rgba(220, 38, 38, 0.3);
+  box-shadow: 0 20px 40px rgba(150, 123, 182, 0.15);
+  border-color: rgba(150, 123, 182, 0.3);
 }
 
 .pulse-on-hover {
@@ -146,7 +146,7 @@
   background: linear-gradient(
     to right,
     transparent 0%,
-    rgba(255, 255, 255, 0.1) 50%,
+    rgba(150, 123, 182, 0.1) 50%,
     transparent 100%
   );
   transform: translateX(-100%);
@@ -163,7 +163,7 @@
 }
 
 .gradient-bg {
-  background: linear-gradient(45deg, #dc2626, #991b1b);
+  background: linear-gradient(45deg, #6029B3, #6E2FCC);
 }
 
 @media (min-width: 640px) {
