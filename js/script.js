@@ -6,77 +6,77 @@ const commandsData = {
       {
         name: "/ban ",
         description: "Permanently bans a user from the server.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/kick",
         description: "Removes a user from the server (they can still rejoin).",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/mute",
         description: "Restricts a user from typing or speaking.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/unmute",
         description: "Removes a mute from a user.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/warn",
         description: "Issues an official warning to a user.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/unban",
         description: "Revokes a user's ban using their User ID.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/purge",
         description: "Bulk deletes a specified number of messages.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/slowmode",
         description: "Sets a cooldown timer between messages in a channel.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/lock",
         description: "Prevents members from sending messages in the current channel.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/unlock",
         description: "Re-opens a locked channel for messages.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/nickname",
         description: "Changes a specific user's nickname.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/role",
         description: "Adds or removes a role from a user.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/modlogs",
         description: "Views the moderation history/logs for a user.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/timeout",
         description: "Temporarily timeouts a user, preventing interaction.",
-        permission: "All",
+        permission: "Mod",
       },
       {
         name: "/announce",
         description: "Sends a formatted announcement to a specific channel.",
-        permission: "All",
+        permission: "Mod",
       },
     ],
   },
@@ -87,12 +87,12 @@ const commandsData = {
       {
         name: "/rank",
         description: "Displays your or another user's current level and XP.",
-        permission: "Admin",
+        permission: "All",
       },
       {
         name: "/leaderboard",
         description: "Shows the server’s top XP earners.",
-        permission: "Admin",
+        permission: "All",
       },
       {
         name: "/addxp",
@@ -210,17 +210,17 @@ const commandsData = {
       {
         name: "/rps",
         description: "Play a game of Rock, Paper, Scissors against the bot.",
-        permission: "Mod",
+        permission: "All",
       },
       {
         name: "/trivia",
         description: "Answers a multiple-choice trivia question for fun.",
-        permission: "Mod",
+        permission: "All",
       },
       {
         name: "/coinflip",
         description: "Flips a coin for a random Heads or Tails result.",
-        permission: "Mod",
+        permission: "All",
       },
     ],
   },
@@ -231,22 +231,22 @@ const commandsData = {
       {
         name: "/gstart",
         description: "Starts a new giveaway with a set duration and prize.",
-        permission: "Mod",
+        permission: "Admin",
       },
       {
         name: "/gend",
         description: "Ends an ongoing giveaway early and picks a winner.",
-        permission: "Mod",
+        permission: "Admin",
       },
       {
         name: "/greroll",
         description: "Rolls a new winner for a completed giveaway.",
-        permission: "Mod",
+        permission: "Admin",
       },
       {
         name: "/glist",
         description: "Displays all active giveaways running on the server.",
-        permission: "Mod",
+        permission: "Admin",
       },
     ],
   },
@@ -257,17 +257,17 @@ const commandsData = {
       {
         name: "/reactionrole add",
         description: " ",
-        permission: "Mod",
+        permission: "Admin",
       },
       {
         name: "/reactionrole remove",
         description: " ",
-        permission: "Mod",
+        permission: "Admin",
       },
       {
         name: "/reactionrole list",
         description: " ",
-        permission: "Mod",
+        permission: "Admin",
       },
     ],
   },
@@ -314,27 +314,27 @@ const commandsData = {
       {
         name: "/ping",
         description: " ",
-        permission: "Mod",
+        permission: "All",
       },
       {
         name: "/botinfo",
         description: " ",
-        permission: "Mod",
+        permission: "All",
       },
       {
         name: "/serverinfo",
         description: " ",
-        permission: "Mod",
+        permission: "All",
       },
       {
         name: "/userinfo",
         description: " ",
-        permission: "Mod",
+        permission: "All",
       },
        {
         name: "/avatar",
         description: " ",
-        permission: "Mod",
+        permission: "All",
       },
       {
         name: "/poll",
@@ -344,7 +344,7 @@ const commandsData = {
       {
         name: "/say",
         description: " ",
-        permission: "Mod",
+        permission: "All",
       },
       {
         name: "/embed",
@@ -354,22 +354,22 @@ const commandsData = {
       {
         name: "/remind",
         description: " ",
-        permission: "Mod",
+        permission: "All",
       },
       {
         name: "/dice",
         description: " ",
-        permission: "Mod",
+        permission: "All",
       },
       {
         name: "/choose",
         description: " ",
-        permission: "Mod",
+        permission: "All",
       },
       {
         name: "/calc",
         description: " ",
-        permission: "Mod",
+        permission: "All",
       },
       {
         name: "/cmd",
@@ -384,7 +384,7 @@ const commandsData = {
       {
         name: "/help",
         description: " ",
-        permission: "Mod",
+        permission: "All",
       },
     ],
   },
@@ -808,7 +808,7 @@ function initializeWebsite() {
   const ctaButtons = document.querySelectorAll(".gradient-bg");
   ctaButtons.forEach((button) => button.classList.add("pulse-on-hover"));
 
-  const featureCards = document.querySelectorAll(".feature-card");
+  const featureCards = document.querySelectorMod(".feature-card");
   featureCards.forEach((card) => card.classList.add("shine-effect"));
 }
 async function updateGitHubStats() {
